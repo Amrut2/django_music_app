@@ -1,0 +1,421 @@
+{% extends 'basic.html' %} 
+{% load static %} 
+{%block title%} Home {%endblock title%}
+ {% comment %} ##### carousel #### {% endcomment %} 
+ {% block body %}
+<!-- carousels -->
+<div class="container">
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+
+    <!-- slide show starts here -->
+
+    <div class="container carousel-inner no-padding">
+      <div class="carousel-item active">
+        <a href="#" style="text-decoration: none">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="static/musicbeatapp/notdynamicimages/devotional.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" style="text-decoration: none">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="static/musicbeatapp/notdynamicimages/early90s.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+        </a>
+
+        <a href="#" style="text-decoration: none">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="static/musicbeatapp/notdynamicimages/romantic.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- seond thing! -->
+      <div class="carousel-item">
+        <a href="#" style="text-decoration: none">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="static/musicbeatapp/notdynamicimages/evergreen.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" style="text-decoration: none">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="static/musicbeatapp/notdynamicimages/sanu.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" style="text-decoration: none">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="static/musicbeatapp/notdynamicimages/sidhu.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- third thing -->
+      <div class="carousel-item">
+        <a href="#" style="text-decoration: none">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="static/musicbeatapp/notdynamicimages/neha.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" style="text-decoration: none">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="static/musicbeatapp/notdynamicimages/punjabi.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+        </a>
+
+        <a href="#" style="text-decoration: none">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="static/musicbeatapp/notdynamicimages/newrelease.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  <hr style="color: white; margin-top: 12%" />
+
+  {% comment %} ##########Carousel########## {% endcomment %} {% comment %}
+  ########## carousel image ######### {% endcomment %} {% comment %}
+  <div
+    id="carouselExampleSlidesOnly"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="static/musicbeatapp/bgimage.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="static/musicbeatapp/bgimage.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="static/musicbeatapp/bgimage.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
+    </div>
+  </div>
+  {% endcomment %} {% comment %} ########################## CARDS
+  ################################### {% endcomment %}
+  <h2
+    style="
+      justify-content: center;
+      display: flex;
+      padding-top: 2%;
+      padding-bottom: 6%;
+      font-family: 'Acme', sans-serif;
+      color: white;
+    "
+  >
+    Trending Songs
+  </h2>
+  <div
+    class="row"
+    style="
+      display: inline-flex;
+      padding: 2px;
+      justify-content: space-evenly;
+      height: 550px;
+    "
+  >
+    {% for i in song%}
+
+    <div
+      class="card"
+      style="
+        width: 250px;
+        margin-bottom: 70px;
+        padding-top: 3px;
+        padding-bottom: 21%;
+        display: inline-flex;
+        height: 200px;
+        background-color: black;
+      "
+    >
+      <a href="/musicbeatapp/songs/" style="text-decoration: none">
+        <img
+          src="{{i.image.url}}"
+          alt="..."
+          class="card-img-top"
+          alt="..."
+          style="width: 95%; height: 65%; padding-left: 7%; padding-top: 7%"
+        />
+        <div class="card-body" style="padding-down: 7%">
+          <p class="card-title">{{i.name}}</p>
+          {% comment %}
+          <a
+            href="/musicbeatapp/songs/{{i.song_id}}"
+            class="btn btn-outline-danger"
+            >Listen Song</a
+          >
+          {% endcomment %}
+        </div>
+      </a>
+    </div>
+
+    {% endfor%}
+
+    <hr style="color: gray" />
+
+    <div
+      class="row"
+      style="
+        width: 80%;
+        padding-top: 5%;
+        padding-bottom: 7%;
+        margin-right: 5%;
+        margin-left: 5%;
+        display: inline-flex;
+      "
+    >
+      <img src="static/musicbeatapp/notdynamicimages/allstars.png" alt="" />
+      <p style="color: white">
+        <strong>Tell us which artists you like</strong>
+      </p>
+      <p style="color: #808080">We'll create an experience just for you</p>
+      <a href="#"
+        ><button
+          type="button"
+          style="background: #ee7600; width: 15%; border-radius: 15px 50px"
+        >
+          Let's go
+        </button></a
+      >
+    </div>
+
+    <hr style="color: gray" />
+
+    <h2
+      style="
+        justify-content: center;
+        display: flex;
+        padding-top: 2%;
+        padding-bottom: 6%;
+        font-family: 'Acme', sans-serif;
+        color: white;
+      "
+    >
+      Latest Songs
+    </h2>
+    <div
+      class="row"
+      style="
+        display: inline-flex;
+        padding: 2px;
+        justify-content: space-evenly;
+        height: 550px;
+      "
+    >
+      {% for i in song%}
+
+      <div
+        class="card"
+        style="
+          width: 250px;
+          margin-bottom: 70px;
+          padding-top: 4px;
+          padding-bottom: 20%;
+          display: inline-flex;
+          height: 200px;
+          background-color: black;
+        "
+      >
+        <a href="/musicbeatapp/songs/" style="text-decoration: none">
+          <img
+            src="{{i.image.url}}"
+            alt="..."
+            class="card-img-top"
+            alt="..."
+            style="width: 100%; height: 70%; padding-left: 7%; padding-top: 7%"
+          />
+          <div class="card-body" style="padding-down: 10%">
+            <p class="card-title">{{i.name}}</p>
+            {% comment %}
+            <a
+              href="/musicbeatapp/songs/{{i.song_id}}"
+              class="btn btn-outline-danger"
+              >Listen Song</a
+            >
+            {% endcomment %}
+          </div>
+        </a>
+      </div>
+
+      {% endfor%}
+
+      <hr style="color: gray" />
+
+      <h2
+        style="
+          justify-content: center;
+          display: flex;
+          padding-top: 2%;
+          padding-bottom: 5%;
+          font-family: 'Acme', sans-serif;
+          color: white;
+        "
+      >
+        Top Songs
+      </h2>
+
+      <div
+        class="row"
+        style="
+          display: inline-flex;
+          padding: 2px;
+          justify-content: space-evenly;
+          height: 550px;
+        "
+      >
+        {% for i in song%}
+
+        <div
+          class="card"
+          style="
+            width: 250px;
+            margin-bottom: 70px;
+            padding-top: 1%;
+            display: inline-flex;
+            height: 200px;
+            background-color: black;
+          "
+        >
+          <a
+            href="/musicbeatapp/songs/{{i.trensong_id}}"
+            style="text-decoration: none"
+          >
+            <img
+              src="{{i.image.url}}"
+              class="card-img-top"
+              alt="..."
+              style="width: 95%; height: 65%; padding-left: 7%; padding-top: 7%"
+            />
+            <div class="card-body" style="padding-down: 10%">
+              <p class="card-title">{{i.name.url}}</p>
+              {% comment %}
+              <a
+                href="/musicbeatapp/songs/{{i.song_id}}"
+                class="btn btn-outline-danger"
+                >Listen Song</a
+              >
+              {% endcomment %}
+            </div>
+          </a>
+        </div>
+        {% comment %}
+      </div>
+      {% endcomment %} {% endfor%}
+
+      <hr style="color: gray" />
+
+      {% endblock body %}
+    </div>
+  </div>
+</div>

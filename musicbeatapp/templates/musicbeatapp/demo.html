@@ -1,0 +1,184 @@
+{% extends 'basic.html' %}
+{% load static %}
+{%block title%}  Library {%endblock title%}
+  {% block body %}
+    <!-- carousels -->
+    <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+     
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+      </div>
+
+      <!-- slide show starts here -->
+      
+      <div class="container carousel-inner no-padding">
+        <div class="carousel-item active">
+        
+          <div class="col-xs-3 col-sm-3 col-md-3">
+
+            <div class="card" style="width: 18rem">
+            
+              <img src="/static/musicbeatapp/notdynamicimages/bgimage.jpg" class="card-img-top" alt="..." />
+              
+              <div class="card-body">
+                <h5 class="card-title">unsplash</h5>
+                
+                <p class="card-text">
+                  first
+                </p>
+                <p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </p>
+              
+              </div>
+           
+            </div>
+          </div>
+          
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            
+            <div class="card" style="width: 18rem">
+              <img src="/static/musicbeatapp/notdynamicimages/bgimage.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">songs</h5>
+                <p class="card-text">
+                  second
+                </p>
+                <p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </p>
+              </div>
+            </div>
+                
+            
+          </div>
+
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img src="/static/musicbeatapp/notdynamicimages/bgimage.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">moresongs</h5>
+                <p class="card-text">
+                  third
+                </p>
+                <p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- seond thing! -->
+        <div class="carousel-item">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">rdburman</h5>
+                <p class="card-text">
+                 some thing
+                </p>
+                <p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">kk</h5>
+                <p class="card-text">
+                  KK special
+                </p>
+                <p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">rafi saab</h5>
+                <p class="card-text">
+                  rafi songs
+                </p>
+                <p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- third thing -->
+        <div class="carousel-item">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">sanu da</h5>
+                <p class="card-text">
+                  kumar sanu special
+                </p>
+                <p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Alka yagnik</h5>
+                <p class="card-text">
+                  alka yagnik special
+                </p>
+                <p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Udit narayan</h5>
+                <p class="card-text">
+                  udit narayan special
+                </p>
+                <p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+    {% endblock body %}

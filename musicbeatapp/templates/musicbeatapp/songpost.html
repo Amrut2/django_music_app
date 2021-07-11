@@ -1,0 +1,25 @@
+ 
+ {% extends 'musicbeatapp/basic.html' %} 
+{% block title %}All Songs{% endblock title %} 
+{% block body %}
+
+{% load static %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-5" style="padding-top: 3%">
+      <img src="/media/{{song.image}}" style="width: 100px; height: 100px" />
+    </div>
+    <div class="col-md-7">
+      <h2 style="padding-top: 7%">Title: {{song.name}}</h2>
+      <h5 style="padding-top: 2%">Category : {{song.tags}}</h5>
+      <p style="padding-top: 2%">Singer: {{song.singer}}</p>
+      <audio controls>
+        <source src="/media/{{ song.song}}" type="audio/mp3" />
+      </audio>
+      <div class="" style = "padding-top:2%;">
+        <a href="/media/{{song.song}} download " ><button class="btn btn-outline-danger" >Download Song</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body%}

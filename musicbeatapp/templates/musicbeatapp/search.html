@@ -1,0 +1,20 @@
+{% extends 'basic.html' %}
+{% load static %}
+{%block title%} Search {%endblock title%}
+  {% block body %}
+<div class="d-inline-flex p-2 ">
+
+ {% for i in song %}
+ <div class="card" style="width:310px ;  display:flex; height:200px;  color: black; ">
+ <a href="/musicbeatapp/songs/" style="text-decoration:none;">
+  <img src="{{i.image.url}}" class="card-img-top" alt="..." style= " width: 100% ; height: 70%;line-height:0px;font-size:0px;background-size: auto;"class="img-thumbnail">
+  <div class="card-body" style="padding-down:10%">
+    <p class="card-title">{{i.name.url}}</p>
+    {% comment %} <a href="/musicbeatapp/songs/{{i.song_id}}" class="btn btn-outline-danger">Listen Song</a> {% endcomment %}
+</div>
+</a>
+</div>
+{% endfor%} 
+</div>
+
+{% endblock body %}
