@@ -1,0 +1,1 @@
+web: guicorn musicprojectapp.wsgi --log-file -
