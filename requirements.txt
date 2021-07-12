@@ -2,11 +2,13 @@ asgiref==3.4.0
 astroid==2.6.2
 autopep8==1.5.7
 colorama==0.4.4
+dj-database-url==0.5.0
 Django==3.2.4
 django-classy-tags==2.0.0
 django-cms==3.9.0
 django-filer==2.0.2
 django-formtools==2.3
+django-heroku==0.3.1
 django-js-asset==1.2.2
 django-mptt==0.12.0
 django-polymorphic==3.0.0
@@ -21,11 +23,13 @@ isort==5.9.1
 lazy-object-proxy==1.6.0
 mccabe==0.6.1
 Pillow==8.2.0
+psycopg2==2.9.1
 pycodestyle==2.7.0
 pylint==2.9.3
 pytz==2021.1
 sqlparse==0.4.1
 toml==0.10.2
 Unidecode==1.1.2
+waitress==2.0.0
 whitenoise==5.2.0
 wrapt==1.12.1
